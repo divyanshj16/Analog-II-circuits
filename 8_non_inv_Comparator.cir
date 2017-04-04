@@ -1,0 +1,12 @@
+*Non-Inverting Comparator with Vref = 6v
+X1 3 2 4 5 6 ua741
+R1 2 8 4.7k
+R2 2 0 4.7k
+Vcc 4 0 dc 12v
+Vee 0 5 dc 12v
+Vf 8 0 dc 12v
+Vin 3 0 sin(0 11v 1khz)
+.include ua741
+.tran 0 2ms
+.probe
+.end
