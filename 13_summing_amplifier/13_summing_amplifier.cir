@@ -1,0 +1,16 @@
+*summing amplifier
+X1 0 2 6 7 8 ua741
+Rf 2 8 100k
+R1 3 2 10k
+R2 4 2 10k
+R3 5 2 10k
+Vin1 3 0 sin(0 2v 100hz)
+Vin2 4 0 sin(0 1v 100hz)
+Vin3 5 0 sin(0 0.5v 100hz)
+v 8 0 sin(0 2.5v 100hz)
+Vcc 6 0 dc 12v
+Vee 0 2 dc 12v
+.include ua741
+.tran 0 100ms 0ms 0.01ms
+.probe
+.end
