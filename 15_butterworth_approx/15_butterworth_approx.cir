@@ -1,0 +1,15 @@
+*Butterworth approximation of filters
+X1 1 2 3 4 5 ua741
+Rin 0 2 10k
+Rf 2 5 6k
+R2 1 6 1.6k
+R1 7 6 1.6k
+C1 6 5 0.1u
+C2 1 0 0.1u
+Vcc 3 0 dc 12v
+Vee 0 4 dc 12v
+Vin 7 0  ac 1v
+.include ua741
+.ac dec 20 1hz 10khz
+.probe
+.end
