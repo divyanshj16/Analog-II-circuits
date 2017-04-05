@@ -1,0 +1,14 @@
+*zero crossing detector using timing marker generator	
+X1 1 0 2 3 4 ua741
+C1 4 5 0.5uf
+D1 5 6 D1N4148
+R1 5 0 1k
+RL 6 0 1k
+Vcc 2 0 dc 12v
+Vee 0 3 dc 12v
+Vin 1 0 sin(0 10v 100hz)
+.include ua741
+.include D1N4148
+.tran 0 200ms 100ms 0.01ms
+.probe
+.end
