@@ -1,0 +1,15 @@
+*2nd order Active LPF
+X1 1 2 3 4 5 ua741
+R 1 6 10k
+Ra 6 7 10k
+R1 2 0 1k
+R2 2 5 9k
+C1 1 0 100nf
+C2 6 5 100nf
+Vin 7 0 ac 1v
+vcc 3 0 dc 12v
+vee 0 4 dc 12v
+.include ua741
+.ac dec 20 1hz 10khz
+.probe
+.end
