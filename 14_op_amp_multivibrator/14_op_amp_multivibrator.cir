@@ -1,0 +1,12 @@
+*op amp Multivibrator
+X1 1 2 3 4 5 ua741
+Ra 2 5 50k
+C1 2 0 0.01uf
+R2 1 0 30k
+R1 1 5 35k
+Vcc 3 0 dc 12v
+Vee 0 4 dc 12v
+.include ua741
+.tran 0 30ms 20ms 0.01ms
+.probe
+.end
