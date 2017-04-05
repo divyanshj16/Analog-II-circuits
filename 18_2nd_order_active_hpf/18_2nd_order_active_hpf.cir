@@ -1,0 +1,15 @@
+*2nd Order active HPF
+X1 1 2 3 4 5 ua741
+C1 1 6 100nf
+C2 6 7 100nf
+Ra 6 5 10k
+R1 2 0 1k
+R2 2 5 9k
+R 1 0 10k
+Vin 7 0 ac 1v
+vcc 3 0 dc 12v
+vee 0 4 dc 12v
+.include ua741
+.ac dec 100 1hz 10khz
+.probe
+.end
