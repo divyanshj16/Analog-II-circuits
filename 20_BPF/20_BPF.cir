@@ -1,0 +1,15 @@
+*Active BPF
+X1 1 2 3 4 5 ua741
+C1 1 6 100nf
+R1 2 0 1k
+R2 2 5 9k
+Ra 5 7 25k
+C2 7 0 100nf
+R 1 0 10k
+Vin 6 0 ac 1v
+vcc 3 0 dc 12v
+vee 0 4 dc 12v
+.include ua741
+.ac dec 20 1hz 10khz
+.probe
+.end
